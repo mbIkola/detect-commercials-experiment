@@ -3,7 +3,7 @@ files=$(ls database/ads/ad-*) ;
 	for x in ${files[@]} ; do  
 		filename=$(basename $x);  
 		echo $filename":"; 
-		time python dejavu.py vectorize  $x  database/vectorized/$filename.djv ; 
+		time python commercial-detect-opencv.py vectorize  $x  database/vectorized/$filename.djv ; 
 done 
 #ad-Aflubin.mp4, :
 #
